@@ -1,0 +1,102 @@
+[0m06:25:18.041299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48e1038ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48dfdb3ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48dfdb3b10>]}
+
+
+============================== 06:25:18.052845 | 89ec0210-6e19-4a68-b7f4-afdb35593864 ==============================
+[0m06:25:18.052845 [info ] [MainThread]: Running with dbt=1.12.0
+[0m06:25:18.053286 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'fail_fast': 'False', 'static_parser': 'True', 'quiet': 'False', 'hints_enabled': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'invocation_command': 'dbt init', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1', 'empty': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'no_print': 'None', 'debug': 'False', 'warn_error': 'None', 'profiles_dir': '/home/rexsy/.dbt', 'introspect': 'True', 'log_format': 'default', 'version_check': 'True', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m06:25:18.059394 [info ] [MainThread]: Creating dbt configuration folder at /home/rexsy/.dbt
+[0m06:25:37.546838 [debug] [MainThread]: Starter project path: /home/rexsy/.local/lib/python3.13/site-packages/dbt/include/starter_project
+[0m06:25:37.550798 [info ] [MainThread]: Setting up your profile.
+[0m06:28:56.905016 [info ] [MainThread]: Profile custom_postgres written to /home/rexsy/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m06:28:56.907564 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m06:28:56.907892 [info ] [MainThread]: dbt version: 1.12.0
+[0m06:28:56.908113 [info ] [MainThread]: python version: 3.13.14
+[0m06:28:56.908265 [info ] [MainThread]: python path: /usr/bin/python3.13
+[0m06:28:56.908403 [info ] [MainThread]: os info: Linux-7.1.3-201.fc44.x86_64-x86_64-with-glibc2.43
+[0m06:28:56.924627 [info ] [MainThread]: Using profiles dir at /home/rexsy/.dbt
+[0m06:28:56.924956 [info ] [MainThread]: Using profiles.yml file at /home/rexsy/.dbt/profiles.yml
+[0m06:28:56.925127 [info ] [MainThread]: Using dbt_project.yml file at /home/rexsy/data-engineering/elt/custom_postgres/dbt_project.yml
+[0m06:28:56.925437 [info ] [MainThread]: adapter type: postgres
+[0m06:28:56.925607 [info ] [MainThread]: adapter version: 1.11.0
+[0m06:28:56.988467 [info ] [MainThread]: Configuration:
+[0m06:28:56.988763 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m06:28:56.988928 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:28:56.989087 [info ] [MainThread]: Required dependencies:
+[0m06:28:56.989255 [debug] [MainThread]: Executing "git --help"
+[0m06:28:56.990814 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m06:28:56.991190 [debug] [MainThread]: STDERR: "b''"
+[0m06:28:56.991429 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m06:28:56.991661 [info ] [MainThread]: Connection:
+[0m06:28:56.991912 [info ] [MainThread]:   host: localhost
+[0m06:28:56.992098 [info ] [MainThread]:   port: 5434
+[0m06:28:56.992262 [info ] [MainThread]:   user: postgres
+[0m06:28:56.992411 [info ] [MainThread]:   database: destination_db
+[0m06:28:56.992560 [info ] [MainThread]:   schema: public
+[0m06:28:56.992703 [info ] [MainThread]:   connect_timeout: 10
+[0m06:28:56.992844 [info ] [MainThread]:   role: None
+[0m06:28:56.992984 [info ] [MainThread]:   search_path: None
+[0m06:28:56.993142 [info ] [MainThread]:   keepalives_idle: 0
+[0m06:28:56.993281 [info ] [MainThread]:   sslmode: None
+[0m06:28:56.993421 [info ] [MainThread]:   sslcert: None
+[0m06:28:56.993559 [info ] [MainThread]:   sslkey: None
+[0m06:28:56.993703 [info ] [MainThread]:   sslrootcert: None
+[0m06:28:56.993840 [info ] [MainThread]:   application_name: dbt
+[0m06:28:56.993969 [info ] [MainThread]:   autocommit: False
+[0m06:28:56.994125 [info ] [MainThread]:   retries: 1
+[0m06:28:56.994369 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m06:28:57.039127 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m06:28:57.067497 [debug] [MainThread]: Using postgres connection "debug"
+[0m06:28:57.067794 [debug] [MainThread]: On debug: select 1 as id
+[0m06:28:57.068029 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:28:57.072599 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m06:28:57.073347 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m06:28:57.073612 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m06:28:57.073808 [debug] [MainThread]: On debug: No close available on handle
+[0m06:28:57.074008 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m06:28:57.074187 [info ] [MainThread]: [31m1 check failed:[0m
+[0m06:28:57.074348 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5434 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m06:28:57.074561 [info ] [MainThread]: Your new dbt project "custom_postgres" was created!
+Initialized new project in /home/rexsy/data-engineering/elt/custom_postgres/custom_postgres
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m06:28:57.074750 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m06:28:57.075481 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 219.08313, "process_in_blocks": "3104", "process_kernel_time": 0.13508, "process_mem_max_rss": "142432", "process_out_blocks": "288", "process_user_time": 1.591512}
+[0m06:28:57.076577 [debug] [MainThread]: Command `dbt init` succeeded at 06:28:57.076105 after 219.08 seconds
+[0m06:28:57.077494 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m06:28:57.077746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48dffdb950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48dfe6ab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48df382580>]}
+[0m06:28:57.078136 [debug] [MainThread]: Flushing usage events
+[0m06:28:58.303845 [debug] [MainThread]: An error was encountered while trying to flush usage events
